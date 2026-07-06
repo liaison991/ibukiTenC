@@ -1,0 +1,298 @@
+/* 全体のレイアウトに関する設定-------------------------------------------- */
+body {
+	text-align : center;
+	color: #404040;
+	font-family: 'Osaka','verdana','メイリオ','ＭＳ Ｐゴシック';
+	background-color:#ffffff;
+	font-size: 0.8em;
+	background-image: url("img/diagonal_line.png");
+	padding:0px;
+	margin:0px;
+}
+
+/* ページ全体 */
+div#container {
+	/* 横幅 = 基本700px + 左右border計2px */
+	width : 702px;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : left;
+}
+
+/* ヘッダー */
+div#header {
+	position: relative;
+	background-color: #ffffff;
+	border: solid 1px #cccccc;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+/* カラム全体 */
+div#all-columns {
+	float : left;
+	background-color: #ffffff;
+	border:solid 1px #cccccc;
+}
+
+/* プライマリカラム */
+div#primary-column {
+	/* 左右のpaddingと横幅と左右のborderあわせて450px */
+	float : left;
+	width : 429px;
+	padding : 10px;
+	border-right:solid 1px #cccccc;
+}
+
+/* セカンダリカラム */
+div#secondary-column {
+	/* 左右のpaddingと横幅あわせて250px */
+	float : right;
+	width : 230px;
+	padding-top : 10px;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+/* プライマリアンドセカンダリカラム */
+div#primary_and_secondary-column {
+	/* 左右のpaddingと横幅あわせて250px */
+	/*width : 230px;*/
+	padding : 20px;
+}
+
+/* フッター */
+div#footer {
+	clear : both;
+	text-align : center;
+	/*font-size: 0.8em;*/
+	background-color: #eeeeee;
+	border: solid 1px #cccccc;
+	border-bottom: 0px;
+	margin-top: 5px;
+}
+
+/* ヘッダー中の要素 */
+/* ロゴ */
+div#logo {
+	position: relative;
+	margin: 0;
+}
+
+/* メニュー */
+div#navigation {
+	text-align : right;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	padding : 2em;
+	margin: 0;
+}
+
+/* 概要 */
+div#introduction {
+	text-align : right;
+	border-top:dashed 1px #a9a9a9;
+	padding : 0.25em;
+}
+
+/* プライマリカラム中の要素 */
+/* 注意事項 */
+div.attention {
+	background-color: #f6f6f6;
+	font-size: 0.85em;
+	border: solid 1px;
+	margin: 1em;
+	padding: 1em;
+}
+
+/* セカンダリカラム中の要素 */
+/* 告知事項 */
+div.announcement {
+	border-bottom: solid 1px #a9a9a9;
+}
+
+/* 日付 */
+div.date {
+	text-align : right;
+	border-bottom:dotted 1px #a9a9a9;
+}
+
+/* 見出しに関する設定----------------------------------------- */
+h1 {
+	border-bottom:dotted 1px #a9a9a9;
+	color: #3e97dc;
+	font-weight: bold;
+	font-size: 1.2em;
+	
+	background-image: url("img/h1_icon.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	margin-top: 2.0em;
+}
+
+h2 {
+	border-bottom:dashed 1px #a9a9a9;
+	font-size: 1.0em;
+}
+
+h2.attention {
+	border-bottom:dashed 1px #a9a9a9;
+	font-size: 1.2em;
+	color: #ff0000;
+}
+
+news {
+	background-color: #efefef;
+}
+
+h3 {
+	font-size: 1.0em;
+}
+
+/* 段落に関する設定------------------------------------------ */
+p {
+	line-height: 1.5;
+}
+
+/* 注意事項 */
+.attention p {
+	margin: 0px;
+}
+
+/* 掲示板入り口 */
+p.entrance {
+	font-size: 1.2em;
+	text-align: center;
+	margin-bottom: 3.0em;
+}
+
+/* テーブルに関する設定--------------------------------------- */
+th {
+	background-color: #eeeeee;
+}
+
+td {
+	border:solid 1px #eeeeee;
+}
+
+/* 箇条書きに関する設定--------------------------------------- */
+ul {
+	line-height: 1.5;
+}
+
+/* 罫線に関する設定--------------------------------------- */
+hr {
+	border-top: dotted 1px #a9a9a9;
+	border-bottom: dotted 1px #a9a9a9;
+	border-left:none 0px;
+	border-right:none 0px;
+}
+
+/* 強調に関する設定--------------------------------------- */
+em {
+	font-weight: bold;
+}
+
+strong {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+strong.important {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+/* 引用に関する設定--------------------------------------- */
+blockquote {
+	border-left:1px solid #cccccc; 
+	padding-left: 1.0em;
+}
+
+
+/* リンクに関する設定--------------------------------------- */
+a:link, a:active {
+	color: #0077bb;
+}
+
+A:visited {
+	color: #00295f;
+}
+
+A:hover {
+	background-color: #eaeff7;
+}
+
+#navigation a:link, #navigation a:active, #navigation a:visited, #navigation a:hover {
+	background-image: url("img/menu_icon.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 1.8em;
+}
+
+a img {
+	border-style:none;
+}
+
+/* フォームに関する設定--------------------------------------- */
+input,textarea{
+	border:1px solid #696969; 
+	font-size: 1em;
+	font-family: 'Osaka','verdana','メイリオ','ＭＳ Ｐゴシック';
+}
+
+/* 掲示板のスタイルに関する設定--------------------------------------- */
+div.bbs {
+	padding: 1em;
+}
+
+div.bbs hr {
+	border-top:dashed 1px #a9a9a9;
+	border-left: none;
+	border-right: none;
+	border-bottom: dashed 1px #a9a9a9;
+}
+
+div.bbs th {
+	border: none;
+}
+
+div.bbs td {
+	border: none;
+}
+
+/* その他--------------------------------------- */
+/* 非表示 */
+.hidden {
+	display: none;
+}
+
+/* 強調表示 */
+.highlight {
+	font-weight: bold;
+}
+
+/* エラー表示 */
+.error {
+	color: #ff0000;
+}
+
+/* メールアドレス画像 */
+.mail_img {
+	vertical-align: middle;
+}
+
+/* 利用許諾 */
+.license {
+	background-color: #f6f6f6;
+	font-size: 1em;
+	border: solid 1px;
+	padding: 1em;
+}
+
+/* 下に余白を入れる */
+.margin_bottom {
+	margin-bottom: 2.0em;
+}
